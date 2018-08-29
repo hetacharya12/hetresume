@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'hetresume',
         'USER':'postgres',
-        'PASSWORD':'1290hetdu',
+        'PASSWORD':'nooneshallpass',
         'HOST':'127.0.0.1',
         'PORT':'5432',
     }
@@ -134,6 +134,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass

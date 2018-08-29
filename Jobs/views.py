@@ -7,4 +7,4 @@ def home(request):
     images = Myimage.objects
     for imageurls in images.all():
         myimageurl = imageurls.image.url
-    return render(request, 'jobs/index-5.html',{'jobs': jobs,'images':myimageurl})
+    return render(request, 'jobs/index-5.html',{'jobs': jobs})
