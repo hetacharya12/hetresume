@@ -436,14 +436,14 @@ p {
 
 .services-front-flip,
 .services-back-flip {
-    transition: transform 0.5s;
-    backface-visibility: hidden;
+    -webkit-transition: transform 0.5s;
+    -webkit-backface-visibility: hidden;
 }
 
 .services-front-flip {
-    box-shadow: 0 10px 50px rgba(20, 50, 47, 0.03), 0 10px 40px rgba(0, 0, 0, 0.03);
-    min-height: 218px;
-    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 50px rgba(20, 50, 47, 0.03), 0 10px 40px rgba(0, 0, 0, 0.03);
+    -webkit-min-height: 218px;
+    -webkit-border-radius: 5px;
 }
 .services-back-flip {
     position: absolute;
