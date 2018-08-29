@@ -1,0 +1,618 @@
+
+{% load static %}
+
+<html lang="en" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <title>Het Acharya</title>
+
+        <link rel="shortcut icon" href="{% static 'images/H-ico3.ico' %}">
+
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans" rel="stylesheet">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+
+        <!--Material Icon -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/materialdesignicons.min.css' %}" />
+
+        <!--mobrise Icon -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mobrise.css' %}" />
+
+        <!-- magnific-popup css  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}" />
+
+        <!-- Custom  Css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/colors/default.css' %}" />
+
+    </head>
+
+    <body>
+
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand logo text-uppercase" href=".">
+                        Het Acharya
+                    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                        <li class="nav-item active">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                <!--        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#testimonial" class="nav-link">Testimonial</a>
+                        </li>
+                <!--        <li class="nav-item">
+                            <a href="#blog" class="nav-link">Blog</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- home start -->
+        <section class="bg-home" id="home">
+            <div class="bg-overlay"></div>
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container animation">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="home-title text-center text-white">
+                                    <h3 class="text-muted mb-3">ETL & Application Developer</h3>
+                                    <h1 class="display-3">Het Acharya</h1>
+                                    <p></p>
+                                    <div class="mt-5">
+                                        <a href="{% static 'files/Het_Acharya_Resume.pdf' %}" class="btn btn-outline btn-round">Download CV <i class="mdi mdi-download ml-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- home end -->
+
+        <!-- about start -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="title text-center mb-5">
+                            <div class="mb-5">
+                                <i class="mdi mdi-account-settings h1 text-muted"></i>
+                            </div>
+                            <h3>About me</h3>
+                            <p class="text-muted">An experienced ETL and application developer who has worked on BIG Data solutions for large scale projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="story-tab" data-toggle="tab" href="#story" role="tab" aria-controls="story" aria-selected="true">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="skill-tab" data-toggle="tab" href="#skill" role="tab" aria-controls="skill" aria-selected="false">Skill</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="story" role="tabpanel" aria-labelledby="story-tab">
+                                <div class="text-center">
+                                    <div class="about-img mt-5 mb-5">
+                                        <img src="{% static 'images/het.jpg' %}" alt="" class="img-fluid mx-auto d-block rounded-circle">
+                                    </div>
+                                    <h3 class="mb-3">Het Acharya <small class="text-muted"> - ETL & Application developer</small></h3>
+                                    <p class="text-muted">•	6 years of experience in software development <br>
+•	Created spark/scala applications for ETL of Big Data in Hadoop <br>
+•	Developed the SQL translation engine to translate the traditional data warehouse SQL (Netezza,Greenplum) to Hive SQL or Spark <br>
+•	Developed C# and JAVA applications for IBM IGC and workflows in IBM BPM<br>
+•	Developed Scribe maps and SSIS packages for Data Migration to Microsoft GP dynamics<br>
+•	Developed ETL/ELT SSIS packages for Capital Markets and P&C operations projects<br>
+•	Solid fundamentals in SQL, Java, C, C++, VBA, Virtuoso Cadence, Visual C#, PowerShell and MATLAB<br>
+•	Efficient and motivated self-starter with excellent time management skills<br>
+</p>
+                                    <div class="mt-5">
+                                        <a href="{% static 'files/Het_Acharya_Resume.pdf' %}" class="btn btn-outline btn-round">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="skill" role="tabpanel" aria-labelledby="skill-tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="skill mt-5">
+                                            <div>
+                                                <p class="text-muted text-uppercase mb-2">SSIS</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width:94%;">
+                                                        <div class="progress-value text-muted">94%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-5">
+                                                <p class="text-muted text-uppercase mb-2">C#</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width:90%;">
+                                                        <div class="progress-value text-muted">90%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-5">
+                                                <p class="text-muted text-uppercase mb-2">Python</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width:86%;">
+                                                        <div class="progress-value text-muted">86%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="skill">
+                                            <div class="mt-5">
+                                                <p class="text-muted text-uppercase mb-2">Powershell</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width:84%;">
+                                                        <div class="progress-value text-muted">84%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5">
+                                                <p class="text-muted text-uppercase mb-2">Java</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width:80%;">
+                                                        <div class="progress-value text-muted">80%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5">
+                                                <p class="text-muted text-uppercase mb-2">Scala</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width:76%;">
+                                                        <div class="progress-value text-muted">76%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="experiences">
+                                            <div class="mt-5 mb-5">
+                                                <h5 class="font-weight-bold text-center text-custom">Experiences</h5>
+                                                <hr>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <h6>BIG Data Consultant</h6>
+                                                    <p class="text-muted">Next Pathway Inc, Feb 2018 - Continue</p>
+                                                    <hr class="mt-4 mb-4">
+                                                </div>
+                                                <div>
+                                                    <h6>ETL & Application Developer Consultant</h6>
+                                                    <p class="text-muted">BMO Financial Group, Nov 2016 - Feb 2018</p>
+                                                    <hr class="mt-4 mb-4">
+                                                </div>
+                                                <div>
+                                                    <h6>ETL Developer Consultant</h6>
+                                                    <p class="text-muted">G Adventures, Feb 2016 - Nov 2016</p>
+                                                    <hr class="mt-4 mb-4">
+                                                </div>
+                                                <div>
+                                                    <h6>ETL Developer Consultant</h6>
+                                                    <p class="text-muted">BMO Financial Group, July 2014 - Jan 2016</p>
+                                                    <hr class="mt-4 mb-4">
+                                                </div>
+                                                <div>
+                                                    <h6>Software Testing Associate</h6>
+                                                    <p class="text-muted">Blackberry, May 2012 - Aug 2013</p>
+                                                    <hr class="mt-4 mb-4">
+                                                </div>
+                                                <div>
+                                                    <h6>Jr. VBA Developer</h6>
+                                                    <p class="text-muted">CIBC, May 2011 - Aug 2011</p>
+                                                    <hr class="mt-4 mb-4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="education">
+                                            <div class="mt-5 mb-5">
+                                                <h5 class="font-weight-bold text-center text-custom">Education</h5>
+                                                <hr>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <h6>Bachelor of Electrical and Bio-Medical Engineering</h6>
+                                                    <p class="text-muted">McMaster University, 2009 - 2014</p>
+                                                    <hr class="mt-4 mb-4">
+                                                </div>
+                                                <div>
+                                                    <h6>Higher Secondary School</h6>
+                                                    <p class="text-muted">A.G. High School and G&D Parikh Higher Secondary School, 2003-2007</p>
+                                                    <hr class="mt-4 mb-4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+
+        <!-- services start -->
+        <section class="section bg-light" id="projects">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="title text-center mb-5">
+                            <div class="mb-5">
+                                <i class="mdi mdi-all-inclusive h1 text-muted"></i>
+                            </div>
+                            <h3>Notable Projects</h3>
+                            <p class="text-muted">BIG Data regulatory and Data Migration projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="services-flip-box mt-4">
+                            <div class="services-front-flip bg-white text-center p-5">
+                                <div class="services-desc">
+                                    <h5 class="mb-3">Data Governance - BMO</h5>
+                                    <p class="text-muted mb-0">• Created applications to track and load Data lineage to IBM IGC <br>• Created IBM BPM workflows to automate business processes</p>
+                                </div>
+                            </div>
+                            <div class="services-back-flip text-center bg-custom text-white p-5">
+                                <div class="services-desc">
+                                    <div class="services-icon">
+                                      <!--  <i class="mdi mdi-tablet-ipad display-1"></i> -->
+                                        <h2 class="text-muted">BMO Financial Group, Nov 2016 - Feb 2018</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="services-flip-box mt-4">
+                            <div class="services-front-flip bg-white text-center p-5">
+                                <div class="services-desc">
+                                    <h5 class="mb-3">Shift - Next Pathway</h5>
+                                    <p class="text-muted mb-0">•	Developed the SQL translation engine to translate the traditional data warehouse SQL (Netezza,Greenplum) to Hive SQL or Spark</p>
+                                </div>
+                            </div>
+                            <div class="services-back-flip text-center bg-custom text-white p-5">
+                                <div class="services-desc">
+                                    <div class="services-icon">
+                                      <!--  <i class="mdi mdi-palette display-1"></i> -->
+                                      <h2 class="text-muted">Next Pathway Inc, Feb 2018 - Current</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="services-flip-box mt-4">
+                            <div class="services-front-flip bg-white text-center p-5">
+                                <div class="services-desc">
+                                    <h5 class="mb-3">Volcker Rule - BMO</h5>
+                                    <p class="text-muted mb-0">• Developed AML reports based on many capital market feeds and complex business logic and packaged them in SSIS for automated generation</p>
+                                </div>
+                            </div>
+                            <div class="services-back-flip text-center bg-custom text-white p-5">
+                                <div class="services-desc">
+                                    <div class="services-icon">
+                                    <!--    <i class="mdi mdi-settings display-1"></i> -->
+                                        <h2 class="text-muted">BMO Financial Group, July 2014 - Jan 2016</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="services-flip-box mt-4">
+                            <div class="services-front-flip bg-white text-center p-5">
+                                <div class="services-desc">
+                                    <h5 class="mb-3">Data Migration -G Adv.</h5>
+                                    <p class="text-muted mb-0">• Interconnecting various applications using SSIS for automation and smooth data flow for data migration from Postgre to Microsoft GP Dynamics. </p>
+                                </div>
+                            </div>
+                            <div class="services-back-flip text-center bg-custom text-white p-5">
+                                <div class="services-desc">
+                                    <div class="services-icon">
+                                  <!--      <i class="mdi mdi-security display-1"></i> -->
+                                  <h2 class="text-muted">G Adventures, Feb 2016 - Nov 2016</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="services-flip-box mt-4">
+                            <div class="services-front-flip bg-white text-center p-5">
+                                <div class="services-desc">
+                                    <h5 class="mb-3">BES - BlackBerry</h5>
+                                    <p class="text-muted mb-0">• Worked on testing and investigation of enterprise solutions like BES 5.0.4, BES10 and its maintenance releases on iOS, Android and BB10 platforms</p>
+                                </div>
+                            </div>
+                            <div class="services-back-flip text-center bg-custom text-white p-5">
+                                <div class="services-desc">
+                                    <div class="services-icon">
+                                      <!--  <i class="mdi mdi-chart-arc display-1"></i> -->
+                                        <h2 class="text-muted">Blackberry, May 2012 - Aug 2013</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="services-flip-box mt-4">
+                            <div class="services-front-flip bg-white text-center p-5">
+                                <div class="services-desc">
+                                    <h5 class="mb-3">AML Reporting - BMO</h5>
+                                    <p class="text-muted mb-0">• Created reports with SCD(Slowly Changing Dimensions) logic implemented in T-SQL on Netezza appliance</p>
+                                </div>
+                            </div>
+                            <div class="services-back-flip text-center bg-custom text-white p-5">
+                                <div class="services-desc">
+                                    <div class="services-icon">
+                                      <!--  <i class="mdi mdi-responsive display-1"></i> -->
+                                      <h2 class="text-muted">BMO Financial Group, July 2014 - Jan 2016</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services end -->
+
+
+        <!-- counters start -->
+        <section class="section bg-counter">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row" id="counter">
+                    <div class="col-lg-4">
+                        <div class="text-center mt-3 text-white">
+                            <div class="counter-content">
+                                <h1 class="counter-value mb-3" data-count="5">0</h1>
+                                <h6 class="counter-name text-light font-weight-normal">Happy Clients</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center mt-3 text-white">
+                            <div class="counter-content">
+                                <h1 class="counter-value mb-3" data-count="72">0</h1>
+                                <h6 class="counter-name text-custom font-weight-normal">Working Months</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center mt-3 text-white">
+                            <div class="counter-content">
+                                <h1 class="counter-value mb-3" data-count="15">0</h1>
+                                <h6 class="counter-name text-light font-weight-normal">Projects Completed</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- counters end -->
+
+        <!-- testimonial start -->
+        <section class="section bg-light" id="testimonial">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="title text-center mb-5">
+                            <div class="mb-5">
+                                <i class="mdi mdi-comment-account-outline h1 text-muted"></i>
+                            </div>
+                            <h3>What People Say</h3>
+                            <p class="text-muted">Testimonials from colleagues I have had the privilege to work with:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="testimonial p-4 mt-4 bg-white">
+                            <p class="text-muted">Het worked with me at the same team and he trained me since my first day at BlackBerry. He was always there to help to answer any question or to direct to someone who knows the answer. Het has got great amount of patience to listen and to give the valuable advice. He knew the stuff he was teaching. The training he gave allowed me to dive into the projects way faster than expected.</p>
+                            <h6 class="pt-4 mb-0">Maksim Avdyushkin - <small class="text-muted">Software Developer</small></h6>
+                            <div class="testi-icon">
+                                <i class="mdi mdi-format-quote-open display-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimonial mt-4 p-4 bg-white">
+                            <p class="text-muted">Het is one of the smartest person I’ve worked with so far. With his skills, you can always rely on not just getting the work done in time but with the highest possible code quality. I highly recommend Het for any dev work under his skillset.</p>
+                            <h6 class="pt-4 mb-0">Varun Sabhlok - <small class="text-muted">Big Data Consultant</small></h6>
+                            <div class="testi-icon">
+                                <i class="mdi mdi-format-quote-open display-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial end -->
+
+        <!-- blog start
+        <section class="section" id="blog">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="title text-center mb-5">
+                            <div class="mb-5">
+                                <i class="mdi mdi-credit-card-multiple h1 text-muted"></i>
+                            </div>
+                            <h3>Latest News</h3>
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog bg-light mt-4 p-4">
+                            <p>Website Design</p>
+                            <h5><a href="#" class="text-dark">Best Personal Template on Themeforest</a></h5>
+                            <p class="mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing typesetting industry. Ipsum has been the industry's</p>
+                            <div class="pt-4">
+                                <a href="#" class="text-custom">Read more <small class="mdi mdi-arrow-right ml-1"></small></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog bg-light mt-4 p-4">
+
+                            <p>WordPress</p>
+                            <h5><a href="#" class="text-dark">WordPress Personal theme on Themeforest</a></h5>
+                            <p class="mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing typesetting industry. Ipsum has been the industry's</p>
+                            <div class="pt-4">
+                                <a href="#" class="text-custom">Read more <small class="mdi mdi-arrow-right ml-1"></small></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog bg-light mt-4 p-4">
+                            <p>Trends</p>
+                            <h5><a href="#" class="text-dark">Exploring 3D & Web Design Trends</a></h5>
+                            <p class="mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing typesetting industry. Ipsum has been the industry's</p>
+                            <div class="pt-4">
+                                <a href="#" class="text-custom">Read more <small class="mdi mdi-arrow-right ml-1"></small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog end -->
+
+        <!-- contact start -->
+        <section class="section contact-wrapper bg-contact" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="title text-center text-white mb-5">
+                            <div class="mb-5">
+                                <i class="mdi mdi-headphones h1"></i>
+                            </div>
+                            <h3>Contact me</h3>
+                            <p>Email will be the best way to keep in touch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="contact-desc text-center mt-4 p-4">
+                            <div class="contact-icon mb-3">
+                                <i class="mdi mdi-map-marker text-custom h3"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="mb-0">Toronto, ON, Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="contact-desc text-center mt-4 p-4">
+                            <div class="contact-icon mb-3">
+                                <i class="mdi mdi-email-outline text-custom h3"></i>
+                            </div>
+                            <div class="contact-details">
+                              <a href="mailto:hetacharya@gmail.com"  style="color:#C0C0C0">hetacharya@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact end -->
+
+        <!-- footer start -->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mt-5 mb-5">
+                            <h2 class="mb-5">Het Acharya</h2>
+                            <ul class="social-icons list-inline">
+                                <li class="list-inline-item"><a href="https://twitter.com/Hetacharya12" class=""><i class="mdi mdi-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/hetach/" class=""><i class="mdi mdi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="https://plus.google.com/u/0/+HetAcharya" class=""><i class="mdi mdi-google"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/hetacharya/" class=""><i class="mdi mdi-linkedin"></i></a></li>
+                            </ul>
+                            <p class="copyright-desc text-muted mb-0">{% now "Y" %} © Het Acharya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+        <!-- javascript -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/popper.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+        <script src="{% static 'js/scrollspy.min.js' %}"></script>
+        <!-- Magnific Popup -->
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- filter -->
+        <script src="{% static 'js/isotope.js' %}"></script>
+        <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+        <!--Partical js-->
+        <script src="{% static 'js/particles.js' %}"></script>
+        <script src="{% static 'js/particles.app.js' %}"></script>
+        <!-- custom -->
+        <script src="{% static 'js/app.js' %}"></script>
+    </body>
+
+</html>
