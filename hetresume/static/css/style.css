@@ -584,7 +584,7 @@ p {
 
 .bg-counter{
     position: relative;
-    background-image: url(../images/het.jpg);
+    background-image: url(../images/bg-counter.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
